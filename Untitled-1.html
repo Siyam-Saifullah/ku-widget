@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>খুলনা বিশ্ববিদ্যালয় এ-ইউনিট ভর্তি নির্দেশিকা ২০২৫-২৬</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better Bengali rendering */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+Bengali:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Noto Sans Bengali', 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue background */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 min-h-screen flex items-center justify-center">
+
+    <!-- Main Container Card -->
+    <div id="admission-guide" class="w-full max-w-4xl bg-white shadow-2xl rounded-xl overflow-hidden">
+        
+        <!-- Header -->
+        <header class="bg-blue-600 text-white p-6 rounded-t-xl">
+            <h1 class="text-xl md:text-3xl font-bold">খুলনা বিশ্ববিদ্যালয় এ-ইউনিট ভর্তি নির্দেশিকা</h1>
+            <p class="text-sm md:text-lg font-light mt-1">বিজ্ঞান, প্রকৌশল ও প্রযুক্তিবিদ্যা স্কুল | শিক্ষাবর্ষ: ২০২৫-২০২৬</p>
+        </header>
+
+        <!-- Interactive Tab Navigation -->
+        <nav class="flex flex-wrap border-b border-gray-200">
+            <button class="tab-button p-3 text-sm md:text-base font-semibold text-gray-700 border-b-2 border-transparent hover:bg-gray-100 transition duration-150 flex-1 md:flex-none" onclick="selectTab('eligibility')" data-tab="eligibility">আবেদনের যোগ্যতা</button>
+            <button class="tab-button p-3 text-sm md:text-base font-semibold text-gray-700 border-b-2 border-transparent hover:bg-gray-100 transition duration-150 flex-1 md:flex-none" onclick="selectTab('disciplines')" data-tab="disciplines">ডিসিপ্লিন ও আসন সংখ্যা</button>
+            <button class="tab-button p-3 text-sm md:text-base font-semibold text-gray-700 border-b-2 border-transparent hover:bg-gray-100 transition duration-150 flex-1 md:flex-none" onclick="selectTab('exam')" data-tab="exam">পরীক্ষা পদ্ধতি ও নম্বর</button>
+            <button class="tab-button p-3 text-sm md:text-base font-semibold text-gray-700 border-b-2 border-transparent hover:bg-gray-100 transition duration-150 flex-1 md:flex-none" onclick="selectTab('timeline')" data-tab="timeline">গুরুত্বপূর্ণ তারিখসমূহ</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div class="p-6">
+            
+            <!-- 1. Eligibility (আবেদনের যোগ্যতা) -->
+            <div id="eligibility" class="tab-content hidden space-y-4">
+                <h2 class="text-2xl font-bold text-blue-800 border-b pb-2 mb-4">আবেদনের যোগ্যতা (Eligibility)</h2>
+                <ul class="list-disc pl-5 space-y-3">
+                    <li>
+                        <span class="font-semibold text-gray-700">এসএসসি/সমমান এবং এইচএসসি/সমমান পরীক্ষা:</span> ২০২২ অথবা ২০২৩ সালে অনুষ্ঠিত এসএসসি/সমমান এবং ২০২৪ অথবা ২০২৫ সালে অনুষ্ঠিত এইচএসসি/সমমান পরীক্ষায় উত্তীর্ণ শিক্ষার্থীরা আবেদন করতে পারবে।
+                    </li>
+                    <li>
+                        <span class="font-semibold text-gray-700">ন্যূনতম জিপিএ:</span> এসএসসি/সমমান এবং এইচএসসি/সমমান পরীক্ষায় প্রাপ্ত জিপিএ-এর যোগফল ন্যূনতম <span class="text-red-600 font-extrabold">৮.০০</span> হতে হবে।
+                    </li>
+                    <li>
+                        <span class="font-semibold text-gray-700">ইংরেজি মিডিয়াম (GCE O/A-Level):</span>
+                        <ul class="list-circle pl-5 mt-1 space-y-1 text-sm">
+                            <li>O-Level: পাঁচটি বিষয়ে প্রতিটিতে কমপক্ষে **B গ্রেড**।</li>
+                            <li>A-Level: গণিত, পদার্থবিজ্ঞান ও রসায়ন বিষয়ে প্রতিটিতে কমপক্ষে **B গ্রেড**।</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 2. Disciplines & Seats (ডিসিপ্লিন ও আসন সংখ্যা) -->
+            <div id="disciplines" class="tab-content hidden">
+                <h2 class="text-2xl font-bold text-blue-800 border-b pb-2 mb-4">ডিসিপ্লিন এবং আসন সংখ্যা</h2>
+                <div class="overflow-x-auto shadow-lg rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200">
+                        <thead class="bg-blue-100">
+                            <tr>
+                                <th class="px-3 py-3 text-left text-xs font-medium text-gray-600 uppercase tracking-wider">ডিসিপ্লিন</th>
+                                <th class="px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase tracking-wider">কোর্সের মেয়াদ</th>
+                                <th class="px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase tracking-wider">সাধারণ আসন</th>
+                                <th class="px-3 py-3 text-center text-xs font-medium text-gray-600 uppercase tracking-wider">মোট আসন (সংরক্ষিত সহ)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200 text-sm">
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">স্থাপত্য (Architecture)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৫ বছর, স্নাতক</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৫</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৩৭</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">কম্পিউটার সায়েন্স এন্ড ইঞ্জিনিয়ারিং (CSE)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৮</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪০</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">ইলেক্ট্রনিক্স এন্ড কমিউনিকেশন ইঞ্জিনিয়ারিং (ECE)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৫</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৩৭</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">নগর ও গ্রামীণ পরিকল্পনা (URP)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৮</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪০</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">গণিত</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক (সম্মান)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪৩</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪৬</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">পদার্থবিজ্ঞান</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক (সম্মান)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৮</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪০</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">রসায়ন</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক (সম্মান)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৮</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪০</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 bg-gray-50">
+                                <td class="px-3 py-3 whitespace-nowrap font-medium">পরিসংখ্যান</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৪ বছর, স্নাতক (সম্মান)</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center">৩৮</td>
+                                <td class="px-3 py-3 whitespace-nowrap text-center text-blue-600 font-bold">৪০</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="px-3 py-3 whitespace-nowrap font-bold text-right text-base bg-blue-50">মোট আসন সংখ্যা:</td>
+                                <td colspan="2" class="px-3 py-3 whitespace-nowrap font-bold text-center text-base bg-blue-50 text-red-700">৩২০</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">সংরক্ষিত আসনে প্রার্থী না পাওয়া গেলে সাধারণ মেধাক্রম থেকে শূন্য আসন পূরণ করা হবে।</p>
+            </div>
+
+            <!-- 3. Exam Details (ভর্তি পরীক্ষা পদ্ধতি) -->
+            <div id="exam" class="tab-content hidden space-y-4">
+                <h2 class="text-2xl font-bold text-blue-800 border-b pb-2 mb-4">ভর্তি পরীক্ষা পদ্ধতি (Exam Structure)</h2>
+                <div class="space-y-6">
+                    <!-- MCQ Section -->
+                    <div class="border p-4 rounded-lg bg-yellow-50">
+                        <h3 class="text-xl font-semibold text-yellow-800 mb-2">১ম অংশ: MCQ পরীক্ষা (মোট ৬০ নম্বর)</h3>
+                        <p class="text-sm font-medium">সময়: সকাল ১০:০০ থেকে সকাল ১০:৪৫ পর্যন্ত (৪৫ মিনিট)</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-700">
+                            <li>গণিত: ১৫ নম্বর</li>
+                            <li>পদার্থবিজ্ঞান: ১৫ নম্বর</li>
+                            <li>রসায়ন: ১৫ নম্বর</li>
+                            <li>ইংরেজি: ১০ নম্বর</li>
+                            <li>ICT: ০৫ নম্বর</li>
+                        </ul>
+                        <p class="text-red-500 mt-2 text-sm font-semibold">বিঃদ্রঃ MCQ-তে প্রতিটি ভুল উত্তরের জন্য ০.২৫ নম্বর কর্তন করা হবে।</p>
+                    </div>
+
+                    <!-- Written Section -->
+                    <div class="border p-4 rounded-lg bg-green-50">
+                        <h3 class="text-xl font-semibold text-green-800 mb-2">২য় অংশ: লিখিত পরীক্ষা (মোট ৪০ নম্বর)</h3>
+                        <p class="text-sm font-medium">সময়: সকাল ১০:৪৫ থেকে সকাল ১১:৩০ পর্যন্ত (৪৫ মিনিট)</p>
+                        <ul class="list-disc pl-5 mt-2 text-gray-700">
+                            <li>গণিত: ১০ নম্বর</li>
+                            <li>পদার্থবিজ্ঞান: ১০ নম্বর</li>
+                            <li>রসায়ন: ১০ নম্বর</li>
+                            <li>ইংরেজি: ০৫ নম্বর</li>
+                            <li>ICT: ০৫ নম্বর</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Drawing Section (Architecture Only) -->
+                    <div class="border p-4 rounded-lg bg-purple-50">
+                        <h3 class="text-xl font-semibold text-purple-800 mb-2">৩য় অংশ: মুক্তহস্তে অংকন (স্থাপত্য ডিসিপ্লিনের জন্য)</h3>
+                        <p class="text-sm font-medium">নম্বর: ৫০ | সময়: সকাল ১১:৪০ থেকে দুপুর ১২:৪০ পর্যন্ত (৬০ মিনিট)</p>
+                        <p class="text-purple-700 mt-2 text-sm">এই অংশটি শুধুমাত্র স্থাপত্য ডিসিপ্লিনের আবেদনকারীদের জন্য প্রযোজ্য।</p>
+                    </div>
+
+                    <p class="text-sm text-gray-600">ভর্তি পরীক্ষা এইচএসসি/সমমানের পাঠ্যক্রম অনুযায়ী অনুষ্ঠিত হবে। Non Programmable Calculator ব্যবহার করা যাবে।</p>
+                </div>
+            </div>
+
+            <!-- 4. Timeline (গুরুত্বপূর্ণ তারিখসমূহ) -->
+            <div id="timeline" class="tab-content hidden">
+                <h2 class="text-2xl font-bold text-blue-800 border-b pb-2 mb-4">গুরুত্বপূর্ণ তারিখসমূহ (Admission Timeline)</h2>
+                <div class="space-y-4">
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-red-100 border-l-4 border-red-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">আবেদন শুরু:</span>
+                        <span class="text-lg font-bold text-red-700 md:w-2/3">০৭/১১/২০২৫</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-red-100 border-l-4 border-red-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">আবেদন শেষ:</span>
+                        <span class="text-lg font-bold text-red-700 md:w-2/3">২৭/১১/২০২৫ (রাত ১১:৫৯ পর্যন্ত)</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-blue-100 border-l-4 border-blue-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">ভর্তি পরীক্ষা:</span>
+                        <span class="text-lg font-bold text-blue-700 md:w-2/3">১৯/১২/২০২৫</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-indigo-100 border-l-4 border-indigo-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">ফলাফল প্রকাশ:</span>
+                        <span class="text-lg font-bold text-indigo-700 md:w-2/3">৩০/১২/২০২৫</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-green-100 border-l-4 border-green-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">অনলাইনে ডিসিপ্লিন পছন্দক্রম পূরণ:</span>
+                        <span class="text-lg font-bold text-green-700 md:w-2/3">০১/০১/২০২৬ থেকে ০৩/০১/২০২৬ খ্রি. পর্যন্ত</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row items-start md:items-center p-3 rounded-lg bg-teal-100 border-l-4 border-teal-500">
+                        <span class="text-sm font-semibold text-gray-700 md:w-1/3">মেধা তালিকা থেকে ভর্তি:</span>
+                        <span class="text-lg font-bold text-teal-700 md:w-2/3">১২/০১/২০২৬ থেকে ১৩/০১/২০২৬ খ্রি. পর্যন্ত</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Footer/Contact Info -->
+        <footer class="bg-gray-100 p-4 text-center text-sm rounded-b-xl border-t">
+            <p class="text-gray-600 font-semibold">আবেদন লিঙ্ক: <a href="https://apply.ku.ac.bd/" target="_blank" class="text-blue-600 hover:underline">https://apply.ku.ac.bd/</a></p>
+            <p class="text-gray-600 mt-1">যোগাযোগ: ০১৮৩৩-৩১১০৬৭ বা ০২-৪৭৭৭৩৪২০০</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function selectTab(tabId) {
+            // 1. Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // 2. Deactivate all tab buttons
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('text-blue-600', 'border-blue-600');
+                button.classList.add('text-gray-700', 'border-transparent');
+            });
+
+            // 3. Show the selected tab content
+            const selectedContent = document.getElementById(tabId);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+
+            // 4. Activate the selected tab button
+            const selectedButton = document.querySelector(`.tab-button[data-tab="${tabId}"]`);
+            if (selectedButton) {
+                selectedButton.classList.add('text-blue-600', 'border-blue-600');
+                selectedButton.classList.remove('text-gray-700', 'border-transparent');
+            }
+        }
+
+        // Initialize the first tab (Eligibility) on load
+        window.onload = function() {
+            selectTab('eligibility');
+        };
+    </script>
+
+</body>
+</html>
